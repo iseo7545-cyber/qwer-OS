@@ -1,0 +1,26 @@
+# Plymouth script for qwer OS
+logo_image = Image("logo.png");
+
+# Get screen center
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+
+# Center the logo
+logo_width = logo_image.GetWidth();
+logo_height = logo_image.GetHeight();
+
+logo_sprite = Sprite(logo_image);
+logo_sprite.SetX(screen_width / 2 - logo_width / 2);
+logo_sprite.SetY(screen_height / 2 - logo_height / 2);
+logo_sprite.SetOpacity(1);
+
+# Simple Fade-in animation
+progress = 0;
+fun refresh_callback () {
+  if (progress < 1) {
+    progress += 0.02;
+    logo_sprite.SetOpacity(progress);
+  }
+}
+
+Plymouth.SetRefreshFunction (refresh_callback);

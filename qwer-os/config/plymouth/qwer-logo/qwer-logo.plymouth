@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=qwer OS Logo
+Description=A beautiful boot splash for qwer OS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/qwer-logo
+ScriptFile=/usr/share/plymouth/themes/qwer-logo/qwer-logo.script
