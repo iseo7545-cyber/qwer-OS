@@ -46,13 +46,13 @@ Basic programs like a file manager probably aren't installed by default maybe?
 
 command lists
 
-   ilo install <패키지>      프로그램 설치                ilo install firefox 
-   ilo remove <패키지>      프로그램 삭제                 ilo remove vlc      
+   ilo install <package>      프로그램 설치                ilo install firefox 
+   ilo remove <package>      프로그램 삭제                 ilo remove vlc      
    ilo update              시스템 전체 업데이트           ilo update          
-   ilo search <패키지>      프로그램 검색                 ilo search gimp     
+   ilo search <package>      프로그램 검색                 ilo search gimp     
    ilo info                시스템 상세 정보 확인          ilo info            
-   ilo clean               불필요한 의존성 파일 정리                ilo clean           
-   ilo kernel-update       Zen Kernel 최신 버전 업데이트 및 재빌드     ilo kernel-update   
+   ilo clean               불필요한 의존성 파일 정리                   ilo clean           
+   ilo kernel-update       Zen Kernel 최신 버전 업데이트 및 재빌드        ilo kernel-update   
 
 
 
