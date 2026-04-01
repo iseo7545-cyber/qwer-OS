@@ -13,14 +13,18 @@ CPU: 4+ cores recommended
 RAM: 8GB+ recommended
 Disk: 60GB+ (VDI dynamic allocation)
 
-2. Connect Shared Folder (you need to extract .zip file and select shared folder on vm
-   mkdir -p /mnt/qwer_os
-
-   mount -t vboxsf qwer_os /mnt/qwer_os
-
-   cp -r /mnt/qwer_os ~/qwer-os
-
+2.  open the server with python (you need to extract .zip file)
+   
+   in the windows cmd:
+   
    cd ~/qwer-os
+   
+   python -m http.server 8000 
+
+
+   in the vm: wget -r -np -nH --cut-dirs=1 -R "index.html*" http://192.168.0.10:8000/  (if your ip is 192.168.0.10)
+
+   
 
 Step 2: Fast Sync and Binary Configuration
 To save time, we use pre-built packages instead of compiling from source.
@@ -100,17 +104,19 @@ qwer OS 설치 ISO 파일을 만드는 과정입니다. 시간을 낭비하고�
   
 2..zip 파일을 압축 해제한다
 
-3. 공유 폴더 연결과 qwer OS 빌드 파일 다운로드
+3.  qwer OS 빌드 파일 다운로드
 
-vm에 .zip 파일을 해제한걸 공유 폴더로 설정 한다.
-   
-   mkdir -p /mnt/qwer_os
-   
-   mount -t vboxsf qwer_os /mnt/qwer_os
-   
-   cp -r /mnt/qwer_os ~/qwer-os
-   
-   cd ~/qwer-os
+윈도우 터미널에서:
+
+cd C:\Users\ADMIN\qwer-os
+
+python -m http.server 8000
+
+vm에서:
+
+wget -r -np -nH --cut-dirs=1 -R "index.html*" http://192.168.0.10:8000/ 
+
+
   
 
 4단계: 초고속 동기화 및 바이너리 설정
