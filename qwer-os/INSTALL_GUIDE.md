@@ -67,7 +67,12 @@ command lists
    ilo search <package>       program search                 ilo search gimp     
    ilo info                   system info                      
    ilo clean                  delete unneeded files                              
-   ilo kernel-update          Zen Kernel update & rebuild          
+   ilo kernel-update          Zen Kernel update & rebuild        
+
+   service start: sudo rc-service <서비스명> start
+   service stop: sudo rc-service <서비스명> stop
+   service status config: sudo rc-service <서비스명> status
+   set the service when computor starts running: sudo rc-update add <서비스명> default
 
 
 
@@ -158,4 +163,9 @@ cp ~/qwer-os/build/qwer-os.iso /mnt/qwer_os/
    ilo search <패키지>      프로그램 검색                 ilo search gimp     
    ilo info                시스템 상세 정보 확인                      
    ilo clean               불필요한 의존성 파일 정리                          
-   ilo kernel-update       Zen Kernel 최신 버전 업데이트 및 재빌드       
+   ilo kernel-update       Zen Kernel 최신 버전 업데이트 및 재빌드    
+
+ 서비스 시작: sudo rc-service <서비스명> start
+ 서비스 중지: sudo rc-service <서비스명> stop
+ 서비스 상태 확인: sudo rc-service <서비스명> status
+ 부팅 시 자동 실행 등록: sudo rc-update add <서비스명> default
