@@ -69,10 +69,13 @@ command lists
    ilo clean                  delete unneeded files                              
    ilo kernel-update          Zen Kernel update & rebuild        
 
-   service start: sudo rc-service <서비스명> start
-   service stop: sudo rc-service <서비스명> stop
-   service status config: sudo rc-service <서비스명> status
-   set the service when computor starts running: sudo rc-update add <서비스명> default
+   service start: sudo rc-service <service> start
+   
+   service stop: sudo rc-service <service> stop
+   
+   service status config: sudo rc-service <service> status
+   
+   set the service when computor starts running: sudo rc-update add <service> default
 
 
 
