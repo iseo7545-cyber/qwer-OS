@@ -5,7 +5,7 @@ Creating a qwer OS Installation ISO
 If you want to waste your time, use this method. If you just want a normal installation, download the .iso file from the releases page.
 Step 1: Prepare the Build Environment (Gentoo VM)
 
-0. download the zip file on release
+0. download the zip file with git
 
 1. VM Configuration
 
@@ -90,7 +90,7 @@ ________________________________________________________________________________
 
 qwer OS 설치 ISO 파일을 만드는 과정입니다. 시간을 낭비하고싶다면 이 방법을 쓰시고 일반적인 설치를 하고싶으면 릴리스에서 .iso 파일을 받으세요.
 
-0.릴리스에서 .zip파일을 다운로드하세요
+0. git 으로 .zip파일을 다운로드하세요
 
 1단계: 빌드 환경 준비 (Gentoo VM)
 1. VM 설정 
